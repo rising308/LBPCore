@@ -1,6 +1,20 @@
 name: LBPCore
 version: '${version}'
 
-main: ca.risingvocal.lbpcore.Main
+main: ca.risingvocal.lbpcore.LBPCore
+description: luigibrother.party Core Plugin
+author: rising308
+website: https://www.luigibrother.party
 api-version: '1.21.11'
+depend: [Vault]
+softdepend: [Essentials]
 load: POSTWORLD
+
+permissions:
+  lbpcore.command.admin:
+    description: "Administrator permissions"
+    default: op
+    children:
+      lbpcore.command.admin.reload: true
+      lbpcore.command.admin.sweepstakes: true
+

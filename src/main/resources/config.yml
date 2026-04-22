@@ -1,0 +1,6 @@
+sweepstakes:
+  # Displays internal variables to sender of the sweepstakes command, recommended to keep disabled
+  debug: false
+  # Clamp chance between min and max setting
+  min-chance: 0.01
+  max-chance: 0.75
