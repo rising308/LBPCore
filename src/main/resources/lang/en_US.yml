@@ -3,5 +3,3 @@ commands:
     sender: "<aqua>Executed sweepstakes on <light_purple><player><aqua>!"
     win: "<gold>You won <yellow><amount><gold>!"
     lose: "<gray>You didn't win anything..."
-    never_joined: "<red>Cannot find player <player>!"
-    invalid: "<red>Invalid arguments!"
