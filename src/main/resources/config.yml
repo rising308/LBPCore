@@ -11,3 +11,4 @@ particles:
   # view-sphere: true | Display particles in sphere around player, set to false for a cube
   view-distance: 72
   view-sphere: true
+  show-in-spectator: false

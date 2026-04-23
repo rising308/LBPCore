@@ -2,6 +2,7 @@ package ca.risingvocal.lbpcore.util;
 
 import ca.risingvocal.lbpcore.LBPCore;
 import org.bukkit.Color;
+import org.bukkit.GameMode;
 import org.bukkit.Particle;
 import org.bukkit.entity.Player;
 
@@ -14,6 +15,7 @@ public class ParticleSpawn {
 
         String name = data.getName();
         if (name == null || name.isEmpty()) return;
+        if (player.getGameMode().equals(GameMode.SPECTATOR) && !plugin.getConfig().getBoolean("particles.show-in-spectator")) return;
 
         try {
             Particle particle = Particle.valueOf(name.toLowerCase());
