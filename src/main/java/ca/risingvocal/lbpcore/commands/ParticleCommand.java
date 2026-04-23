@@ -22,7 +22,7 @@ public class ParticleCommand {
     public ParticleCommand(LBPCore plugin) {this.plugin = plugin;}
 
     public LiteralArgumentBuilder<CommandSourceStack> getTree() {
-        return Commands.literal("particle")
+        return Commands.literal("particle_effect")
                 .requires(sender -> sender.getSender().hasPermission("lbpcore.command.admin.particle"))
                         .then(Commands.literal("set")
                                 .then(Commands.argument("target", ArgumentTypes.player())
