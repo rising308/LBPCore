@@ -1,6 +1,13 @@
 sweepstakes:
-  # Displays internal variables to sender of the sweepstakes command, recommended to keep disabled
+  # debug: false | Displays internal variables to sender of the sweepstakes command, recommended to keep disabled
+  # min-chance: 0.05 | Clamp chance between min and max setting
+  # max-chance: 0.75 |
   debug: false
-  # Clamp chance between min and max setting
-  min-chance: 0.01
+
+  min-chance: 0.05
   max-chance: 0.75
+particles:
+  # view-distance: 72 | How many blocks away other players can see particle effects
+  # view-sphere: true | Display particles in sphere around player, set to false for a cube
+  view-distance: 72
+  view-sphere: true
