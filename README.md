@@ -1,3 +1,2 @@
-# WIP - luigibrother.party Core Plugin
+# WIP - luigibrother.party Website
 
-This is intended to be a plugin handling many features of the luigibrother.party Minecraft SMP server.
