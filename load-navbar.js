@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  fetch('navbar.html')
+  fetch('https://www.luigibrother.party/navbar.html')
     .then(r => r.text())
     .then(html => container.innerHTML = html)
     .catch(err => console.error('Failed to load navbar.', err));
