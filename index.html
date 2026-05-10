@@ -2,11 +2,11 @@
 <html>
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<script src="load-navbar.js" defer></script>
+<script src="scripts/load-navbar.js" defer></script>
 
 <head>
   <title>LUIGIBROTHER.PARTY</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="media/favicon.ico">
 </head>
 
 <h1>JOIN THE MINECRAFT SERVER >>> LUIGIBROTHER.PARTY</h1>
@@ -16,7 +16,7 @@
 
 <style>
 #button1 {
-   background-color: #E60048 !important;
+    background-color: #00ffd3 !important;
    color:white !important;
 }
 
@@ -55,7 +55,7 @@ h1 {
 }
 @font-face {
    font-family: minecraftia;
-   src: url(minecraft.ttf);
+   src: url(utility/minecraft.ttf);
 }
         * {
             margin: 0;
@@ -64,34 +64,31 @@ h1 {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        /* Container for the two halves */
         .main-container {
             display: flex;
             min-height: 100vh;
-            flex-wrap: wrap; /* Allows stacking on mobile */
+            flex-wrap: wrap;
         }
 
-        /* Left Side: The Image Mosaic */
         .left-half {
             flex: 1;
             min-width: 50%;
             display: grid;
-            grid-template-columns: repeat(1, 0.7fr); /* 2 columns */
-            grid-template-rows: repeat(2, 0.2fr);    /* 2 rows */
+            grid-template-columns: repeat(1, 0.7fr);
+            grid-template-rows: repeat(2, 0.2fr);
             gap: 10px;
             padding: 20px;
-            background: linear-gradient(to bottom, hotpink, crimson);
+            background: linear-gradient(to top, #00bb94, #00d6a8);
         }
 
         .left-half img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Keeps images from stretching */
+            object-fit: cover;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
-        /* Right Side: Information */
         .right-half {
             flex: 1;
             min-width: 50%;
@@ -99,7 +96,7 @@ h1 {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background: linear-gradient(to bottom, hotpink, crimson);
+            background: linear-gradient(to top, #00bb94, #00d6a8);
         }
 
         .right-half h1 {
@@ -127,22 +124,21 @@ h1 {
             font-family: 'Courier', monospace;
         }
 
-        /* Mobile Adjustments */
         @media (max-width: 768px) {
             .left-half, .right-half {
                 min-width: 100%;
             }
             .left-half {
-                height: 400px; /* Give it a fixed height on mobile */
+                height: 400px;
             }
         }
 </style>
  <div class="main-container">
         <section class="left-half">
-            <img src="https://www.luigibrother.party/sshot1.png" alt="Image 1">
-            <img src="https://www.luigibrother.party/sshot2.png" alt="Image 2">
-            <img src="https://www.luigibrother.party/sshot3.png" alt="Image 3">
-            <img src="https://www.luigibrother.party/sshot4.png" alt="Image 4">
+            <img src="media/sshot1.png" alt="Image 1">
+            <img src="" alt="Image 2">
+            <img src="" alt="Image 3">
+            <img src="" alt="Image 4">
         </section>
 
         <section class="right-half">
@@ -150,22 +146,22 @@ h1 {
 
             <div class="info-point">
                 <h2>Custom Models and Items</h2>
-                <p>We have a regularly updated resource-pack with custom models, courtesy of our server members. The models shown in the screenshots were created by Vocal0id.</p>
+                <p>We have a regularly updated resource-pack with custom models, courtesy of our server members. Several custom items are available in the in-game shop, in exchange for in-game currency.</p>
             </div>
 
             <div class="info-point">
-                <h2>Working Gun Datapack</h2>
-                <p>We have a custom datapack created by Vocal0id that adds fully-functional hitscan guns.</p>
+                <h2>Custom Weapons Datapacks</h2>
+                <p>We have custom datapacks created by our staff that adds fully-functional hitscan guns as well as other weapons.</p>
             </div>
 
             <div class="info-point">
                 <h2>Many Plugins and Custom Systems</h2>
-                <p>We have various plugins which allow us to create many systems and to overall improve the player's experience. For example, we have a menu to configure custom gradients in chat.</p>
+                <p>We have various plugins which allow us to create many systems and to overall improve the player's experience. For example, there is an in-game shop, chat can be customized in various ways, and there is an options menu for individual customization.</p>
             </div>
 
             <div class="info-point">
-                <h2>Creative World</h2>
-                <p>Members are promoted to the next rank after 24-hours of playtime. Upon being promoted players gain access to a separate creative world.</p>
+                <h2>Ranking System</h2>
+                <p>Members are promoted to the next rank based on playtime, currently there are five player ranks. Upon being promoted members gain various privileges, such as more player homes, less money lost on death, and various commands, with more to come in the future.</p>
             </div>
         </section>
     </div>
